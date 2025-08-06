@@ -31,6 +31,7 @@ if uploaded_file is not None:
             ax.legend()
             ax.grid(True)
             st.pyplot(fig)
+            plt.xticks (rotation=45)
         else:
             st.info("Selecteer minstens één parameter om een grafiek te tonen.")
     else:

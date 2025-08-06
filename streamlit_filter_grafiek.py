@@ -30,8 +30,8 @@ if uploaded_file is not None:
             ax.set_title("Tijdsgrafiek van geselecteerde parameters")
             ax.legend()
             ax.grid(True)
-            st.pyplot(fig)
             plt.xticks (rotation=45)
+            st.pyplot(fig)            
         else:
             st.info("Selecteer minstens één parameter om een grafiek te tonen.")
     else:
